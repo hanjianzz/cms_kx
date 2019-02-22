@@ -9,5 +9,5 @@ db.init_app(app)
 from app.cms.views import blue
 app.register_blueprint(blue)
 # 这是前台用蓝图
-#from app.main.views import blue
-#app.register_blueprint(blue)
+from app.front.views import blue
+app.register_blueprint(blue)

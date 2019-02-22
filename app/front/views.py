@@ -5,14 +5,14 @@ from . import blue
 
 @blue.route('/')
 def index():
-    return "这是cms首页"
+    return "这是首页"
 
 # 采用类视图,重写get|post方法
 
 class LoginView(views.MethodView):
 
     def get(self):
-        return render_template('cms/login.html')
+        return render_template('front/index.html')
 
     def post(self):
         pass
