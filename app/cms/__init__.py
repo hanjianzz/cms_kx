@@ -1,3 +1,3 @@
 from flask import Blueprint
 
-blue = Blueprint('cms', __name__,url_prefix='/cms')
+blue = Blueprint('/', __name__)
