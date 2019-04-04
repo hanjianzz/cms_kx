@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+{% block body %}
+	<div id="colorlib-main">
+		<div class="colorlib-work">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3">
+							<span class="heading-meta">用户历史信息查询</span>
+							<h2 class="colorlib-heading animate-box" data-animate-effect="fadeInLeft">个人用户信息查询</h2>
+						</div>
+						<div class="col-md-8 image-content">
+						</div>
+					</div>
+					<div class="iconic-input">
+						<a href="#" class="fa fa-hand-o-right">{{message}}</a><a href="#"></a>
+					</div>
+					<div class="row">
+						<div class="col-md-8 image-content">
+							<form>
+								<div class="row">
+									<div class="col-md-4 form-group">
+										<div>姓名</div>
+										<div class="iconic-input">
+											<i class="fa fa-user"></i>
+											<input type="text" class="form-control"  placeholder="请输入" disabled>
+										</div>
+									</div>
+									<span style="padding:5px;"> </span>
+									<div class="col-md-2 form-group">
+										<div>年龄</div>
+										<input type="text" class="form-control" placeholder="请输入">
+									</div>
+									<div class="col-md-2 form-group">
+										<div>性别</div>
+										<select class="form-control">
+											<option>男</option>
+											<option>女</option>
+										</select>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-8 form-group">
+										<div>地址</div>
+										<div class="iconic-input">
+											<i class="fa fa-home"></i>
+											<input type="text" class="form-control" placeholder="请输入地址">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-3 form-group">
+										<div>团契</div>
+										<div class="iconic-input">
+											<select class="form-control">
+											<option>活水团契</option>
+											<option>否</option>
+										</select>
+										</div>
+									</div>
+									<span style="padding:5px;"> </span>
+									<div class="col-md-3 form-group">
+										<div>侍奉</div>
+										<select class="form-control">
+											<option>宣传部</option>
+											<option>否</option>
+										</select>
+									</div>
+									<div class="col-md-2 form-group">
+										<div>会员登录</div>
+										<select class="form-control">
+											<option>是</option>
+											<option>否</option>
+										</select>
+									</div>
+									
+								</div>
+								<div class="row">
+									<div class="col-md-8 form-group">
+										<div>备注</div>
+										<div class="iconic-input">
+											<textarea rows="6" class="form-control"></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-8">
+										<button class="form-control">
+											确定修改提交
+										</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					<div class="colorlib-bg-color">
+						<div class="col-md-4 sticky-parent">
+							<div id="sticky_item">
+								<div class="project-desc">
+									<h2>Work Name</h2>
+									<span><a href="#">Logo</a>, <a href="#">Brading</a></span>
+									<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+									<p class="icon">
+										<span><a href="#"><i class="icon-share3"></i></a></span>
+										<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+										<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+									</p>
+									<p><a href="#" class="btn btn-primary">Live Preview</a> or <a href="#" class="btn-download">Download</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock body %}

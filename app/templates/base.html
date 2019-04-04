@@ -1,15 +1,22 @@
 <html>
     <title></title>
-    <head>
+    <head lang="zh">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.css')}}">
         <link rel="stylesheet" href="{{url_for('static',filename='css/animate.css')}}">
 	<!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="{{url_for('static',filename='css/icomoon.css')}}">
-        <!-- Flexslider  -->
+    <!-- Flexslider  -->
 	<link rel="stylesheet" href="{{url_for('static',filename='css/flexslider.css')}}">
-    	<!-- Theme style  -->
-	    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+        
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap-table.min.css')}}">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="{{url_for('static',filename='js/bootstrap-table.min.js')}}"></script>
+    <!-- Latest compiled and minified Locales -->
+    <script src="{{url_for('static',filename='js/bootstrap-table-zh-CN.min.js')}}"></script>
     </head>
     <body>
         <div class="colorlib-page">
@@ -17,12 +24,10 @@
                 <h1 id="colorlib-logo"><a href="index.html"><span>YOHAN</span><span>CHINESE</span></a></h1>                        <nav id="colorlib-main-menu" role="navigation">
                     <ul>
                         <li><a href="{{url_for('/.index')}}">首页</a></li>
-                        <li><a href="#">页面展示</a></li>
-                        <li><a href="#">成员登陆</a></li>
-                        <li><a href="#">列表查询</a></li>
-                        <li><a href="#">修改列表</a></li>
-                        <li><a href="#">活动日程</a></li>
-                        <li><a href="#">辩论测试</a>
+                        <li><a href="{{url_for('/.login')}}">成员登陆</a></li>
+                        <li><a href="{{url_for('/.table')}}">列表查询</a></li>
+                        <li><a href="{{url_for('/.table')}}">活动日程</a></li>
+                        <li><a href="{{url_for('/.argue')}}">辩论测试</a></li>
                     </ul>
                 </nav>
                 <div class="colorlib-footer">
